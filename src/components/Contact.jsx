@@ -4,7 +4,7 @@ import { HiMail, HiLocationMarker, HiPhone } from 'react-icons/hi'
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 const contactInfo = [
-    { icon: HiMail, label: 'Email', value: 'ankush.pille@email.com', href: 'mailto:ankush.pille@email.com' },
+    { icon: HiMail, label: 'Email', value: 'ankush.pille1@email.com', href: 'mailto:ankush.pille@email.com' },
     { icon: HiLocationMarker, label: 'Location', value: 'India', href: null },
     { icon: HiPhone, label: 'Phone', value: 'Available on request', href: null },
 ]
