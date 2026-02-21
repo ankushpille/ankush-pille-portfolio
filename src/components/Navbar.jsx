@@ -6,6 +6,7 @@ const navLinks = [
     { name: 'About', href: '#about' },
     { name: 'Projects', href: '#projects' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Resume', href: '#resume' },
     { name: 'Contact', href: '#contact' },
 ]
 
@@ -42,8 +43,8 @@ export default function Navbar() {
     return (
         <nav
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
-                    ? 'bg-dark-500/80 backdrop-blur-xl border-b border-primary-500/10 shadow-lg shadow-dark-900/50'
-                    : 'bg-transparent'
+                ? 'bg-dark-500/80 backdrop-blur-xl border-b border-primary-500/10 shadow-lg shadow-dark-900/50'
+                : 'bg-transparent'
                 }`}
         >
             <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -65,8 +66,8 @@ export default function Navbar() {
                                 href={link.href}
                                 onClick={(e) => handleClick(e, link.href)}
                                 className={`relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${activeSection === link.href.slice(1)
-                                        ? 'text-white'
-                                        : 'text-gray-400 hover:text-white'
+                                    ? 'text-white'
+                                    : 'text-gray-400 hover:text-white'
                                     }`}
                             >
                                 {activeSection === link.href.slice(1) && (

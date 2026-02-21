@@ -52,7 +52,15 @@ export default function About() {
                             <div className="absolute inset-4 rounded-full border border-accent-violet/20 animate-spin-slow" style={{ animationDirection: 'reverse' }} />
                             {/* Inner content */}
                             <div className="absolute inset-8 rounded-full bg-gradient-to-br from-primary-500/20 to-accent-violet/20 flex items-center justify-center overflow-hidden border border-primary-500/30">
-                                <span className="font-display text-6xl md:text-7xl font-bold gradient-text">AP</span>
+                                <img
+                                    src="/profile.jpg"
+                                    alt="Ankush Pille"
+                                    className="w-full h-full object-cover"
+                                    onError={(e) => {
+                                        e.target.style.display = 'none'
+                                        e.target.parentElement.innerHTML = '<span class="font-display text-6xl md:text-7xl font-bold gradient-text">AP</span>'
+                                    }}
+                                />
                             </div>
                         </div>
                     </div>
